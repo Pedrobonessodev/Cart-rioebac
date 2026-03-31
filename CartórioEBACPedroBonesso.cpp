@@ -136,7 +136,8 @@ int main() // Função, tudo que estiver nas chaves estão dentro da função
 		printf("Selecione a opção desejada:\n\n");
 		printf("\t1 - Registrar novo cadastro\n"); // O \t Tem a função de espaçar o texto
 		printf("\t2 - Consultar cadastros\n");
-		printf("\t3 - Remover cadastros\n\n");
+		printf("\t3 - Remover cadastros\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");
 
 		scanf("%d", &opcao); //"scanf" é para analisar a decisão tomada pelo usuário no caso oque foi digitado ""%d"" serve para variável do tipo inteiro e o ", &" serve para setar em qual variavel deve ser armazenada a informação
@@ -153,6 +154,10 @@ int main() // Função, tudo que estiver nas chaves estão dentro da função
 			break;
 			case 3:
 			deletar();
+			break;
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0; //retorna valor 0, quebra de laço e função
 			break;
 			default:
 			printf("Esta opção não está disponível\n\n");
